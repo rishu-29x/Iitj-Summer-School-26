@@ -1,0 +1,16 @@
+# Arduino compiled output
+*.hex
+*.elf
+*.bin
+build/
+
+# OS junk files
+.DS_Store
+Thumbs.db
+
+# IDE config folders
+.vscode/
+.idea/
+
+# Arduino IDE temp
+*.tmp
