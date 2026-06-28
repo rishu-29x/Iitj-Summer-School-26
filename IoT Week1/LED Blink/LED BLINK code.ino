@@ -1,3 +1,12 @@
+/*
+ * Project: LED Blink with Potentiometer Speed Control
+ * Author: Rishu Jaiswal
+ * Date: 29-06-2026
+ * Description: LED blinks at variable speed controlled
+ *              by potentiometer. Blink count printed
+ *              to Serial Monitor.
+ */
+
 int blinkCount = 0;
 
 void setup() {
