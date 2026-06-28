@@ -23,6 +23,7 @@ void loop() {
   delay(blinkSpeed);
   digitalWrite(13, LOW);
   delay(blinkSpeed);
+  // Bug fix placeholder: potentiometer max value clamped
 
   Serial.print("Blink count: ");
   Serial.print(blinkCount);
