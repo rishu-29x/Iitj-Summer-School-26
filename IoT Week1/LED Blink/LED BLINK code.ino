@@ -6,11 +6,17 @@ void setup() {
 }
 
 void loop() {
+  int potValue = analogRead(A0);
+  int blinkSpeed = map(potValue, 0, 1023, 100, 1000);
+
   blinkCount++;
   digitalWrite(13, HIGH);
-  delay(500);
+  delay(blinkSpeed);
   digitalWrite(13, LOW);
-  delay(500);
+  delay(blinkSpeed);
+
   Serial.print("Blink count: ");
-  Serial.println(blinkCount);
+  Serial.print(blinkCount);
+  Serial.print(" | Speed: ");
+  Serial.println(blinkSpeed);
 }
