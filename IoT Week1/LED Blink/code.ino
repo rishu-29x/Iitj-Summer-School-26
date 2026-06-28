@@ -23,5 +23,6 @@ void loop() {
 
   digitalWrite(LED_PIN, LOW);
   Serial.println("LED OFF");
+  //sensor logging placeholder - issue #1
   delay(BLINK_DELAY);
 }
