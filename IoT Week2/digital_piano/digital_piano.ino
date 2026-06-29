@@ -1,5 +1,5 @@
 /*
- Q15: Digital Piano using Buzzer
+Q15: Digital Piano using Buzzer
  
  */
 
@@ -23,7 +23,12 @@ void loop() {
   bool b3 = digitalRead(BTN3);
   bool b4 = digitalRead(BTN4);
 
-  if (b1) {
+  int pressedCount = b1 + b2 + b3 + b4;
+
+  if (pressedCount >= 2) {
+    tone(BUZZER, 392);  // Sol - chord substitute
+  }
+  else if (b1) {
     tone(BUZZER, 262);  // Do
   }
   else if (b2) {
